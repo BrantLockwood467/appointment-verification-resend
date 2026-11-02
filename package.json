@@ -1,0 +1,22 @@
+{
+  "name": "appointment-verification-resend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node src/appointment_service.ts",
+    "demo": "node scripts/appointment_walkthrough.ts",
+    "test": "node --test test/verification_resend.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}

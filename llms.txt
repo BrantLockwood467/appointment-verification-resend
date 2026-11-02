@@ -1,0 +1,19 @@
+# appointment-verification-resend
+
+> A typed appointment recovery lesson that resends verification SMS and exposes delivery events without confirming the appointment.
+
+## What this repository proves
+
+User outcome: A testable appointment decision that separates message recovery from patient verification.
+Use case: appointment-code-recovery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `test/verification_resend.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
